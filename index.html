@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Revv - The Future of UK Vehicle Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #5299FF, #004AAD);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .kpi-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="bg-[#F0F4F8] text-[#1E293B]">
+
+    <main class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-[#004AAD] mb-2">Dr. Revv</h1>
+            <p class="text-xl md:text-2xl font-semibold text-[#1E293B]">The Intelligent Co-Pilot for Every UK Driver & Garage</p>
+        </header>
+
+        <section class="mb-16">
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <p class="text-5xl font-black gradient-text">£4.7Bn</p>
+                    <p class="text-lg font-semibold text-slate-600 mt-2">UK Vehicle Service Market</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <p class="text-5xl font-black gradient-text">42M</p>
+                    <p class="text-lg font-semibold text-slate-600 mt-2">Vehicles on UK Roads</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <p class="text-5xl font-black gradient-text">42,637</p>
+                    <p class="text-lg font-semibold text-slate-600 mt-2">Repair Workshops</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+                <h2 class="text-3xl font-bold text-center mb-8 text-[#004AAD]">The Problem: A Disconnected & Reactive Market</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                    <div>
+                        <h3 class="text-2xl font-bold text-[#5299FF] mb-4 text-center">For Drivers</h3>
+                        <ul class="space-y-3 text-lg list-disc list-inside bg-slate-50 p-6 rounded-lg">
+                            <li><span class="font-semibold">Anxiety & Uncertainty:</span> Juggling multiple apps for compliance, fuel, and navigation.</li>
+                            <li><span class="font-semibold">Unexpected Costs:</span> Reactive repairs lead to costly, stressful breakdowns.</li>
+                            <li><span class="font-semibold">Lack of Transparency:</span> Opaque pricing and processes at service centers.</li>
+                        </ul>
+                    </div>
+                    <div>
+                         <h3 class="text-2xl font-bold text-[#5299FF] mb-4 text-center">For Garages</h3>
+                        <ul class="space-y-3 text-lg list-disc list-inside bg-slate-50 p-6 rounded-lg">
+                            <li><span class="font-semibold">Inefficient Diagnostics:</span> Wasting hours on guesswork instead of fixing.</li>
+                            <li><span class="font-semibold">Finding Customers:</span> Struggling to attract quality, pre-qualified leads.</li>
+                            <li><span class="font-semibold">Workflow Bottlenecks:</span> Unpredictable job flow and inefficient operations.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="mt-8 text-center bg-red-100 border-l-4 border-red-500 text-red-700 p-4 rounded-lg">
+                    <p class="font-bold text-xl">The Human Cost</p>
+                    <p class="text-lg">In 2023, vehicle defects were a factor in <span class="font-black text-2xl">1,225</span> reported accidents, leading to <span class="font-black text-2xl">31</span> fatalities and <span class="font-black text-2xl">273</span> serious injuries on UK roads.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+                <h2 class="text-3xl font-bold text-center mb-8 text-[#004AAD]">Our Solution: An Agentic AI Ecosystem</h2>
+                <p class="text-center text-lg max-w-3xl mx-auto mb-10">Dr. Revv deploys a team of specialised software "agents" that work 24/7 for our users, creating a proactive and intelligent network that connects drivers and garages seamlessly.</p>
+                <div class="flex flex-col items-center">
+                    <div class="bg-[#004AAD] text-white p-4 rounded-xl shadow-md z-10 w-full md:w-auto text-center">
+                        <h3 class="text-xl font-bold">Dr. Revv Core AI</h3>
+                        <p>Central Intelligence Engine</p>
+                    </div>
+                    <div class="w-2 h-10 bg-[#5299FF]"></div>
+                    <div class="w-full h-2 bg-[#5299FF] rounded-full"></div>
+                    <div class="w-full flex justify-around -mt-1">
+                        <div class="w-2 h-10 bg-[#5299FF]"></div>
+                        <div class="w-2 h-10 bg-[#5299FF]"></div>
+                        <div class="w-2 h-10 bg-[#5299FF]"></div>
+                        <div class="w-2 h-10 bg-[#5299FF]"></div>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-4 w-full">
+                        <div class="bg-slate-50 p-4 rounded-xl text-center border-t-4 border-[#5299FF]">
+                            <p class="text-4xl">🔧</p>
+                            <h4 class="font-bold text-lg mt-2">Vehicle Health Agent</h4>
+                            <p class="text-sm">Predicts faults before they happen.</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl text-center border-t-4 border-[#5299FF]">
+                            <p class="text-4xl">🛡️</p>
+                            <h4 class="font-bold text-lg mt-2">Licence Guardian Agent</h4>
+                            <p class="text-sm">Monitors MOT, Tax & Insurance.</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl text-center border-t-4 border-[#5299FF]">
+                             <p class="text-4xl">⛽</p>
+                            <h4 class="font-bold text-lg mt-2">Fuel Economy Agent</h4>
+                            <p class="text-sm">Finds the cheapest local fuel.</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl text-center border-t-4 border-[#5299FF]">
+                            <p class="text-4xl">🛠️</p>
+                            <h4 class="font-bold text-lg mt-2">Workshop AI Assistant</h4>
+                            <p class="text-sm">AI diagnostics for mechanics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8 text-[#004AAD]">UK Market Snapshot (2024-2025)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-center mb-4">Vehicle Powertrain Mix</h3>
+                    <p class="text-center text-slate-600 mb-4">While petrol cars still dominate, the rapid growth of BEVs signals a major market shift that demands new service solutions.</p>
+                    <div class="chart-container h-64 md:h-80">
+                        <canvas id="powertrainChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-center mb-4">Workshop Landscape</h3>
+                     <p class="text-center text-slate-600 mb-4">The market is dominated by independent garages, our primary target, who need advanced tools to compete.</p>
+                    <div class="chart-container h-64 md:h-80">
+                        <canvas id="garageChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 md:col-span-2 lg:col-span-1">
+                    <h3 class="text-xl font-bold text-center mb-4">BEV Market Share Growth</h3>
+                    <p class="text-center text-slate-600 mb-4">The share of Battery Electric Vehicles is accelerating, highlighting an urgent need for specialised EV diagnostics and maintenance.</p>
+                    <div class="chart-container h-64 md:h-80">
+                        <canvas id="bevChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+                <h2 class="text-3xl font-bold text-center mb-2 text-[#004AAD]">The "Dr. Revv Credit Economy"</h2>
+                <p class="text-xl font-semibold text-center text-slate-600 mb-8">Our Defensible Moat: A Gamified, Meritocratic Marketplace</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center items-center">
+                    <div class="flex flex-col items-center">
+                        <div class="bg-slate-100 p-6 rounded-xl border-l-4 border-[#FFD60A]">
+                            <h3 class="text-2xl font-bold text-[#004AAD]">1. Drivers Earn</h3>
+                            <p class="mt-2 text-lg">Users earn credits by referring friends, engaging with the app, and practicing safe, efficient driving.</p>
+                        </div>
+                    </div>
+                     <div class="text-6xl font-black text-[#5299FF] hidden md:block transform rotate-90 md:rotate-0">
+                        <span>→</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="bg-slate-100 p-6 rounded-xl border-l-4 border-[#FFD60A]">
+                            <h3 class="text-2xl font-bold text-[#004AAD]">2. Garages Connect</h3>
+                            <p class="mt-2 text-lg">Garages subscribe to receive credits, which they spend to access qualified, pre-diagnosed customer leads.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center my-4">
+                     <div class="text-6xl font-black text-[#5299FF] transform rotate-90">
+                        <span>→</span>
+                    </div>
+                </div>
+                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center items-center">
+                    <div class="md:col-start-2 flex flex-col items-center">
+                        <div class="bg-slate-100 p-6 rounded-xl border-l-4 border-[#FFD60A]">
+                            <h3 class="text-2xl font-bold text-[#004AAD]">3. Excellence is Rewarded</h3>
+                            <p class="mt-2 text-lg">Garages earn more credits for high-quality service, creating a self-reinforcing loop that benefits the best workshops and all drivers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mb-16">
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-10">
+                <h2 class="text-3xl font-bold text-center mb-8 text-[#004AAD]">Go-to-Market: User Base First, Then Full AI</h2>
+                <div class="relative mt-12">
+                    <div class="absolute left-0 top-1/2 w-full h-1 bg-[#5299FF] -translate-y-1/2"></div>
+                    <div class="relative flex justify-between">
+                        <div class="w-1/3 text-center">
+                            <div class="relative">
+                                <div class="mx-auto w-6 h-6 rounded-full bg-[#004AAD] border-4 border-white"></div>
+                                <div class="mt-4 p-4 bg-slate-50 rounded-lg">
+                                    <h4 class="font-bold text-lg">Phase 0</h4>
+                                    <p class="font-semibold text-[#5299FF]">Mid-Aug 2025</p>
+                                    <p class="text-sm mt-2">Launch B2C app with Fuel & Licence agents. Goal: Rapid user acquisition.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/3 text-center">
+                            <div class="relative">
+                                <div class="mx-auto w-6 h-6 rounded-full bg-[#004AAD] border-4 border-white"></div>
+                                <div class="mt-4 p-4 bg-slate-50 rounded-lg">
+                                    <h4 class="font-bold text-lg">Phase 1</h4>
+                                    <p class="font-semibold text-[#5299FF]">Q3 2025</p>
+                                    <p class="text-sm mt-2">Develop Vehicle Health agent & B2B platform. Goal: Pilot with 10 garages.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-1/3 text-center">
+                            <div class="relative">
+                                <div class="mx-auto w-6 h-6 rounded-full bg-[#004AAD] border-4 border-white"></div>
+                                <div class="mt-4 p-4 bg-slate-50 rounded-lg">
+                                    <h4 class="font-bold text-lg">Phase 2</h4>
+                                    <p class="font-semibold text-[#5299FF]">Q4 2025</p>
+                                    <p class="text-sm mt-2">Commercial launch &amp; prepare for <span class="font-bold">£500k Seed Round</span> in Jan 2026.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="text-center">
+            <div class="bg-gradient-to-r from-[#004AAD] to-[#5299FF] text-white rounded-xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-4">The Ask</h2>
+                <p class="text-xl max-w-2xl mx-auto mb-6">We are seeking to raising a pre-seed round to accelerate our product development and go-to-market launch. We seek a strategic partner to provide:</p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6 text-lg">
+                    <span class="bg-white/20 px-4 py-2 rounded-full">Mentorship & Strategic Guidance</span>
+                    <span class="bg-white/20 px-4 py-2 rounded-full">High-Value Industry Introductions</span>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const tooltipConfig = {
+                callbacks: {
+                    title: function(tooltipItems) {
+                        const item = tooltipItems[0];
+                        let label = item.chart.data.labels[item.dataIndex];
+                        if (Array.isArray(label)) {
+                          return label.join(' ');
+                        } else {
+                          return label;
+                        }
+                    }
+                }
+            };
+            
+            const brilliantBluesPalette = {
+                deepBlue: '#004AAD',
+                brightBlue: '#5299FF',
+                accentGold: '#FFD60A',
+                lightGrey: '#F0F4F8',
+                textSlate: '#1E293B',
+                lightBlue: '#A3C8FF'
+            };
+
+            const wrapLabel = (str, maxWidth = 16) => {
+                if (str.length <= maxWidth) {
+                    return str;
+                }
+                const words = str.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + ' ' + word).trim().length > maxWidth) {
+                        lines.push(currentLine.trim());
+                        currentLine = word;
+                    } else {
+                        currentLine = (currentLine + ' ' + word).trim();
+                    }
+                });
+                if (currentLine) {
+                    lines.push(currentLine.trim());
+                }
+                return lines;
+            };
+
+            const powertrainCtx = document.getElementById('powertrainChart');
+            if(powertrainCtx) {
+                new Chart(powertrainCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Petrol', 'Diesel', 'Battery Electric (BEV)', 'Other Hybrid/PHEV'],
+                        datasets: [{
+                            label: 'Powertrain Mix',
+                            data: [58.2, 32.1, 3.7, 6.0],
+                            backgroundColor: [
+                                brilliantBluesPalette.brightBlue,
+                                brilliantBluesPalette.deepBlue,
+                                brilliantBluesPalette.accentGold,
+                                brilliantBluesPalette.lightBlue,
+                            ],
+                            borderColor: brilliantBluesPalette.lightGrey,
+                            borderWidth: 4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                            },
+                            tooltip: tooltipConfig
+                        },
+                        cutout: '60%'
+                    }
+                });
+            }
+
+            const garageCtx = document.getElementById('garageChart');
+            if(garageCtx) {
+                new Chart(garageCtx, {
+                    type: 'pie',
+                    data: {
+                        labels: ['Independent Garages', 'Franchised/Chains'],
+                        datasets: [{
+                            label: 'UK Workshops',
+                            data: [64, 36],
+                            backgroundColor: [
+                                brilliantBluesPalette.deepBlue,
+                                brilliantBluesPalette.brightBlue
+                            ],
+                            borderColor: brilliantBluesPalette.lightGrey,
+                            borderWidth: 4
+                        }]
+                    },
+                     options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                            },
+                            tooltip: tooltipConfig
+                        }
+                    }
+                });
+            }
+
+            const bevCtx = document.getElementById('bevChart');
+            if(bevCtx) {
+                new Chart(bevCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['2024 (Annual)', 'May 2025'],
+                        datasets: [{
+                            label: 'BEV Market Share %',
+                            data: [19.6, 21.9],
+                            fill: true,
+                            backgroundColor: 'rgba(82, 153, 255, 0.2)',
+                            borderColor: brilliantBluesPalette.brightBlue,
+                            tension: 0.1,
+                            pointBackgroundColor: brilliantBluesPalette.deepBlue,
+                            pointRadius: 5
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: false,
+                                ticks: {
+                                    callback: function(value) {
+                                        return value + '%'
+                                    }
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: tooltipConfig
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
