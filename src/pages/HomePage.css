@@ -1,0 +1,21 @@
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.light-gray-bg {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: #0d6efd;
+}
